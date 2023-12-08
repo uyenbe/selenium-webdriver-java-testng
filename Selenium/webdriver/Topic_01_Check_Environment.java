@@ -27,6 +27,7 @@ public class Topic_01_Check_Environment {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("https://www.facebook.com/");
+
     }
 
     @Test
@@ -42,6 +43,10 @@ public class Topic_01_Check_Environment {
     @Test
     public void TC_03_Form() {
         Assert.assertTrue(driver.findElement(By.xpath("//form[@data-testid='royal_login_form']")).isDisplayed());
+    }
+    @Test
+    public void TC_04(){
+        //...
     }
 
     @AfterClass
